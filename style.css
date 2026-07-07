@@ -1,0 +1,220 @@
+body{
+
+font-family: Arial, sans-serif;
+
+margin:40px;
+
+background:#f4f4f4;
+
+}
+
+header{
+
+background:#0056b3;
+
+color:white;
+
+padding:20px;
+
+}
+
+nav a{
+
+color:white;
+
+margin-right:15px;
+
+text-decoration:none;
+
+}
+
+h1{
+
+color:#003366;
+
+}
+
+table{
+
+border-collapse:collapse;
+
+width:60%;
+
+}
+
+th{
+
+background:#0056b3;
+
+color:white;
+
+padding:10px;
+
+}
+
+td{
+
+padding:10px;
+
+}
+
+button{
+
+padding:10px 20px;
+
+background:#0056b3;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+footer{
+
+margin-top:30px;
+
+}
+.Heading{
+    text-align: center;
+    background-color: #0056b3;
+    color: black;
+    
+}
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+}
+
+/* GLASS NAVBAR */
+header {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* NAV LINKS */
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #00c6ff;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* MAIN CONTAINER */
+.container {
+  padding: 40px;
+  display: grid;
+  gap: 25px;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 20px;
+
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* HEADINGS */
+h1 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+}
+
+th {
+  background: rgba(0, 198, 255, 0.3);
+}
+
+tr {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* BUTTON */
+button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00c6ff;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}

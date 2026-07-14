@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1 style="color: black; background-color: burlywood; text-align: center;">Student Dashboard</h1>
+<header class="navbar">
+  <div class="logo">🎓 StudentHub</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="assignment.html">Assignments</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
 
-<ul>
+<main class="container">
 
-<li class="list"><a href="attendance.html" class="tabs">Attendance</a></li>
+  <h1 class="title">Dashboard</h1>
 
-<li class="list"><a href="assignment.html" class="tabs">Assignments</a></li>
+  <div class="grid">
 
-<li class="list"><a href="timetable.html" class="tabs">Timetable</a></li>
+    <a href="attendance.html" class="card link-card">Attendance</a>
+    <a href="assignment.html" class="card link-card">Assignments</a>
+    <a href="timetable.html" class="card link-card">Timetable</a>
+    <a href="notice.html" class="card link-card">Notice Board</a>
+    <a href="profile.html" class="card link-card">Profile</a>
 
-<li class="list"><a href="notice.html" class="tabs">Notice Board</a></li>
+  </div>
 
-<li class="list"><a href="profile.html" class="tabs">Profile</a></li>
+</main>
 
-</ul>
-<div style="text-align: center;">
-<a href="index.html" class="tabs" style="padding: 10px; background-color: rgb(186, 143, 226);">Home</a>
-</div>
+<footer>
+  © 2026 StudentHub Portal
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

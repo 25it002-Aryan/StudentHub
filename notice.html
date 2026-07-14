@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Notice Board</title>
-<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Latest Notices</h1>
+<header class="navbar">
+  <div class="logo">🎓 StudentHub</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="assignment.html">Assignments</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
 
+<main class="container">
+
+<h1 class="title">Notice Board</h1>
+
+<div class="card">
 <ul>
-
-<li>Assignment submission on Friday.</li>
-
-<li>Lab Exam next week.</li>
-
-<li>Industrial Visit on Saturday.</li>
-
+<li>Assignment submission on Friday</li>
+<li>Lab Exam next week</li>
+<li>Industrial Visit on Saturday</li>
 </ul>
-<div style="text-align: center;">
-<a href="dashboard.html" class="tabs" style="padding: 10px; background-color: rgb(186, 143, 226);">Dashboard</a>
 </div>
+
+</main>
+<footer>
+  © 2026 StudentHub Portal
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

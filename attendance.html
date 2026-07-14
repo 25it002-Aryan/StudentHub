@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Attendance</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Attendance</h1>
+<header class="navbar">
+  <div class="logo">🎓 StudentHub</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="assignment.html">Assignments</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
 
-<table border="1">
+<main class="container">
 
-<tr>
-<th>Subject</th>
-<th>Attendance</th>
-</tr>
+<h1 class="title">Attendance</h1>
 
-<tr>
-<td>Web Development</td>
-<td>92%</td>
-</tr>
-
-<tr>
-<td>Python</td>
-<td>95%</td>
-</tr>
-
+<div class="card">
+<table>
+<tr><th>Subject</th><th>Attendance</th></tr>
+<tr><td>Web Development</td><td>92%</td></tr>
+<tr><td>Python</td><td>95%</td></tr>
 </table>
-
-<br>
-<div style="text-align: center;">
-<a href="dashboard.html">Dashboard</a>
 </div>
+
+</main>
+
+<footer>
+  © 2026 StudentHub Portal
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

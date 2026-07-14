@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>StudentHub - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
+  <div class="logo">🎓 StudentHub</div>
   <nav>
+    <a href="index.html">Home</a>
     <a href="dashboard.html">Dashboard</a>
     <a href="attendance.html">Attendance</a>
     <a href="assignment.html">Assignments</a>
@@ -16,27 +20,37 @@
   </nav>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <div class="card fade-in">
-    <h1>Welcome to Student Hub</h1>
-    <p>Your dashboard overview</p>
+  <div class="card hero">
+    <h1>Welcome to StudentHub</h1>
+    <p>Your all-in-one academic dashboard</p>
+    <!-- <a href="login.html" class="btn">Get Started</a> -->
   </div>
 
-  <div class="card fade-in">
-    <h2>Quick Stats</h2>
-    <p>Attendance: 85%</p>
+  <div class="grid">
+    <div class="card">
+      <h2>📊 Attendance</h2>
+      <p>Track your academic presence</p>
+    </div>
+
+    <div class="card">
+      <h2>📝 Assignments</h2>
+      <p>Manage all submissions easily</p>
+    </div>
+
+    <div class="card">
+      <h2>📅 Timetable</h2>
+      <p>Stay organized daily</p>
+    </div>
   </div>
 
-</div>
+</main>
 
-<script src="script.js"></script>
 <footer>
-    <hr>
-    © 2026 StudentHub Portal
+  © 2026 StudentHub Portal
 </footer>
 
-<script src="js/script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
